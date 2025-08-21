@@ -1,0 +1,92 @@
+Nama-Nama anggota dan peran :
+
+1.Kahfi (navbar)
+2.Tsaqif (Form)
+3.Rizky (footer)
+
+Daftar fitur yg di kembangkan :
+
+1.Navbar (navbar)
+2.Form (form-halaman)
+3.Footer (master)
+
+Link pull request dari GitHub :
+
+https://github.com/seiawanrizqi9-cyber/Tugas-Harian/pull/1
+https://github.com/seiawanrizqi9-cyber/Tugas-Harian/pull/3
+https://github.com/seiawanrizqi9-cyber/Tugas-Harian/pull/2
+
+2 pesan commit yang sesuai konvensi :
+
+1. feat : tambah navbar 
+2. feat : tambah form
+3. fix : memindahkan cabang ke utama
+
+Penjelasan singkat bagaimana konflik merge diselesaikan :
+
+mengambil tag yang penting dari file cabang lalu memasukkannya kedalam file utama, dan menyesuaikannya dengan html dan css yang sudah ada
+
+
+Output git log :
+--oneline :
+25e9219 (HEAD -> master, origin/master, origin/HEAD) fix: memindahkan cabang ke utama
+5446d6d (origin/form-halaman) Merge branch 'master' into form-halaman
+b23d87c Merge pull request #1 from seiawanrizqi9-cyber/navbar
+666c4db Merge branch 'master' into navbar
+88c2b5f Form Halaman
+a47a007 navbar
+c4db34f footer selesai
+e580514 tambah css
+1309ff7 coba lagi
+
+--graph :
+*   commit 25e9219131304204d12f82b780a4f620a3c71678 (HEAD -> master, origin/master, origin/HEAD)
+|\  Merge: b23d87c 5446d6d
+| | Author: SetiawanCyber.9 <seiawanrizqi.9@gmail.com>
+| | Date:   Thu Aug 21 13:12:20 2025 +0700
+| |
+| |     fix: memindahkan cabang ke utama
+| |     
+| |     Tambah form
+| |
+| *   commit 5446d6d536ee7dbbaf7b0473e99c802f2178bae7 (origin/form-halaman)
+| |\  Merge: 88c2b5f b23d87c
+| |/  Author: SetiawanCyber.9 <seiawanrizqi.9@gmail.com>
+|/|   Date:   Thu Aug 21 13:07:17 2025 +0700
+
+--all
+commit c678b082e3d01fbca4c0fa34999645fcac787728 (origin/navbar)
+Merge: d5922e3 25e9219
+Author: SetiawanCyber.9 <seiawanrizqi.9@gmail.com>
+Date:   Thu Aug 21 13:21:46 2025 +0700
+
+    Merge branch 'master' into navbar
+
+commit 25e9219131304204d12f82b780a4f620a3c71678 (HEAD -> master, origin/master, origin/HEAD)
+Merge: b23d87c 5446d6d
+Author: SetiawanCyber.9 <seiawanrizqi.9@gmail.com>
+Date:   Thu Aug 21 13:12:20 2025 +0700
+
+    fix: memindahkan cabang ke Utama
+
+git branch -r :
+$ git branch -r
+  origin/HEAD -> origin/master
+  origin/form-halaman
+  origin/master
+  origin/navbar
+
+git show :
+$ git show 5446d6d
+commit 5446d6d536ee7dbbaf7b0473e99c802f2178bae7 (origin/form-halaman)
+Merge: 88c2b5f b23d87c
+Author: SetiawanCyber.9 <seiawanrizqi.9@gmail.com>
+Date:   Thu Aug 21 13:07:17 2025 +0700
+
+    Merge branch 'master' into form-halaman
+
+diff --cc index.html
+index 54358c1,acc2e4b..eeb93c1
+--- a/index.html
++++ b/index.html
+@@@ -7,24 -5,34 +5,49 @@@
