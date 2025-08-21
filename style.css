@@ -1,0 +1,8 @@
+input{
+   outline: none;
+   border: 1px solid gray;
+}
+textarea {
+    outline: none;
+    border: 1px solid gray;
+}
