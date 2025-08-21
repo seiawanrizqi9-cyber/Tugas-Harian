@@ -20,9 +20,24 @@
 
     <!-- Buat Isi -->
     <main>
-        <div>
+     <h2>Form Pendaftaran</h2>
+  <form action="/submit" method="post">
+    <label for="nama">Nama:</label><br>
+    <input type="text" id="nama" name="nama" placeholder="Name"><br><br>
 
-        </div>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Email"><br><br>
+
+    <label for="gender">Jenis Kelamin:</label><br>
+    <input type="radio" id="pria" name="gender" value="Pria">
+     <label for="pria">Pria</label>
+    <input type="radio" id="wanita" name="gender" value="Wanita">
+    <label for="wanita">Wanita</label><br><br>
+    <label for="pesan">Pesan:</label><br>
+    <textarea id="pesan" name="pesan" rows="4" cols="50" placeholder="Isi Pesan"></textarea><br><br>
+
+    <input type="submit" value="Kirim">
+  </form>
     </main>
     <!-- Isi Selesai -->
 
